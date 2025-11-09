@@ -1,3 +1,30 @@
 spring:
   application:
     name: config-server
+  profiles:
+    # Profile if ms not define one profile
+    active: default
+  cloud:
+    config:
+      server:
+        git:
+          # Repo URL
+          uri: https://github.com/EduardoFlores1/microservice-configs.git
+          # Branch to implement
+          default-label: main
+          # In start project import config
+          clone-on-start: true
+          username: EduardoFlores1
+          password: ${GIT_CONFIG_SERVER_TOKEN}
+
+eureka:
+  instance:
+    # Unique name for this instance see in eureka
+    instance-id: ${spring.application.name}:${random.value}
+  client:
+    service-url:
+      # URL to register eureka
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 7777
