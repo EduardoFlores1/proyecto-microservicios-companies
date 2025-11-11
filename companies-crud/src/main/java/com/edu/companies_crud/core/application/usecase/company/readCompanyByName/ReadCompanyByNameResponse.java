@@ -11,7 +11,7 @@ public record ReadCompanyByNameResponse(
         String name,
         String founder,
         String logo,
-        @JsonFormat(pattern = "dd/MM/yyyy") LocalDate foundationDate,
+        LocalDate foundationDate,
         List<WebSite> webSites
 ) {
 }

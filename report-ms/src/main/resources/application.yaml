@@ -8,7 +8,7 @@ spring:
     import: "optional:configserver:http://localhost:7777"
 
 server:
-  port: 7070
+  port: 0
   servlet:
     context-path: /report-ms
 
