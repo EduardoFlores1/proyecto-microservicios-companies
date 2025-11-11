@@ -19,10 +19,10 @@ public class WebSiteEntity {
 
     public WebSiteEntity() {}
 
-    public WebSiteEntity(Long id, String description, Category category, String name) {
+    public WebSiteEntity(Long id, String name, Category category, String description) {
         this.id = id;
-        this.description = description;
-        this.category = category;
         this.name = name;
+        this.category = category;
+        this.description = description;
     }
 }

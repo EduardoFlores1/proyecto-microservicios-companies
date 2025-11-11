@@ -1,7 +1,6 @@
-package com.edu.companies_crud.core.application.usecase.company.createCompany;
+package com.edu.report_ms.core.application.usecase.company.saveReportByName;
 
-import com.edu.companies_crud.core.domain.model.website.WebSite;
-import com.fasterxml.jackson.annotation.JsonFormat;
+import com.edu.report_ms.core.domain.model.website.WebSite;
 
 import java.time.LocalDate;
 import java.util.List;

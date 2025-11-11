@@ -27,10 +27,10 @@ public class CompanyEntity {
 
     public CompanyEntity() {}
 
-    public CompanyEntity(Long id, String founder, String name, String logo, LocalDate foundationDate, List<WebSiteEntity> webSites) {
+    public CompanyEntity(Long id, String name, String founder, String logo, LocalDate foundationDate, List<WebSiteEntity> webSites) {
         this.id = id;
-        this.founder = founder;
         this.name = name;
+        this.founder = founder;
         this.logo = logo;
         this.foundationDate = foundationDate;
         this.webSites = webSites;

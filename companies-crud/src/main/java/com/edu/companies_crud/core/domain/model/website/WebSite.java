@@ -12,10 +12,10 @@ public class WebSite {
 
     public WebSite() {}
 
-    public WebSite(Long id, String description, Category category, String name) {
+    public WebSite(Long id, String name, Category category, String description) {
         this.id = id;
-        this.description = description;
-        this.category = category;
         this.name = name;
+        this.category = category;
+        this.description = description;
     }
 }
